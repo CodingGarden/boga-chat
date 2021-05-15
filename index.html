@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boga Chat</title>
+  <link href="https://bootswatch.com/5/cyborg/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container main-area">
+    <ul class="list-unstyled" id="messages">
+      <!-- DYNAMICALLY CREATED BY JAVASCRIPT -->
+    </ul>
+    <form>
+      <fieldset>
+        <div class="form-group">
+          <label for="username" class="form-label mt-4">Username</label>
+          <input name="username" type="text" class="form-control" id="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="content" class="form-label mt-4">Message</label>
+          <textarea name="content" class="form-control" id="content" rows="2"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </fieldset>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.2.8/dist/purify.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
